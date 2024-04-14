@@ -21,4 +21,11 @@ fun main() {
     var name: String = "Abid"
     var isMarried: Boolean = true
 
+    // String interpolation
+    println("Welcome $name")
+
+    val maritalStatus: String =  if ( isMarried)  "Married" else "Not Married"
+    println("Your are $maritalStatus")
+
+
 }
