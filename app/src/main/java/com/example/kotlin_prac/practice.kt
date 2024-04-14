@@ -12,7 +12,7 @@ fun main() {
     var age: Int = 30
     var comments: Int = 484
 
-    // all datatypes
+    // all data types
     var count: Byte = 1
     var countries : Short = 200
     var salary: Int = 50000
@@ -27,5 +27,15 @@ fun main() {
     val maritalStatus: String =  if ( isMarried)  "Married" else "Not Married"
     println("Your are $maritalStatus")
 
+    // user input
+    var n1: Int
+    var n2: Int
 
+    print("Enter first number : ")
+    n1 = readln().toInt()
+
+    print("Enter second number : ")
+    n2 = readln().toInt()
+
+    println("Sum = ${n1+n2}")
 }
