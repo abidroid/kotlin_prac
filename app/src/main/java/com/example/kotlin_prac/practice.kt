@@ -40,24 +40,24 @@ fun main() {
 //    println("Sum = ${n1+n2}")
 
     // Decision making
-    var n1: Int
-    var n2: Int
-    var choice: Int
-
-    print("Enter first number : ")
-    n1 = readln().toInt()
-
-    print("Enter second number : ")
-    n2 = readln().toInt()
-
-
-    println("Select Operation")
-    println("1. Add")
-    println("2. Sub")
-    println("3. Mul")
-    println("4. Div")
-    print("Your choice ? ")
-    choice = readln().toInt()
+//    var n1: Int
+//    var n2: Int
+//    var choice: Int
+//
+//    print("Enter first number : ")
+//    n1 = readln().toInt()
+//
+//    print("Enter second number : ")
+//    n2 = readln().toInt()
+//
+//
+//    println("Select Operation")
+//    println("1. Add")
+//    println("2. Sub")
+//    println("3. Mul")
+//    println("4. Div")
+//    print("Your choice ? ")
+//    choice = readln().toInt()
 
 //    if( choice == 1 ){
 //        print("Sum = ${n1+n2}")
@@ -74,13 +74,31 @@ fun main() {
     // Todo: Do the above with when statement
 
 
-    when(choice){
-        1 -> print("Sum = ${n1+n2}")
-        2 -> print("Dif = ${n1-n2}")
-        3 -> print("Pro = ${n1*n2}")
-        4 -> print("Quo = ${n1/n2}")
-        else -> print("Invalid Operation Code")
+//    when(choice){
+//        1 -> print("Sum = ${n1+n2}")
+//        2 -> print("Dif = ${n1-n2}")
+//        3 -> print("Pro = ${n1*n2}")
+//        4 -> print("Quo = ${n1/n2}")
+//        else -> print("Invalid Operation Code")
+//    }
+
+
+    val systemGenNum = (1..100).random();
+    print("A number has been generated from 1 to 100\nTry to guess it")
+
+    while (true){
+         print("Enter your guess : ")
+        val userGuess = readln().toInt();
+
+        if( userGuess > systemGenNum){
+            print("Your guess is high, try again")
+        }else if( userGuess < systemGenNum){
+            print("Your guess is low, try again")
+        }else{
+            break;
+        }
     }
+    println("Congratulations, you have guessed the number")
 }
 
 
