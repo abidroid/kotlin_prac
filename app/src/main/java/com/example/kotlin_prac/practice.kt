@@ -59,16 +59,36 @@ fun main() {
     print("Your choice ? ")
     choice = readln().toInt()
 
-    if( choice == 1 ){
-        print("Sum = ${n1+n2}")
-    }else if( choice == 2){
-        print("Diff = ${n1-n2}")
-    }else if( choice == 3 ){
-        println("Prod = ${n1*n2}")
-    }else if( choice == 4 ){
-        println("Quo = ${n1/n2}")
-    }else{
-        println("Invalid Operation")
-    }
+//    if( choice == 1 ){
+//        print("Sum = ${n1+n2}")
+//    }else if( choice == 2){
+//        print("Diff = ${n1-n2}")
+//    }else if( choice == 3 ){
+//        println("Prod = ${n1*n2}")
+//    }else if( choice == 4 ){
+//        println("Quo = ${n1/n2}")
+//    }else{
+//        println("Invalid Operation")
+//    }
 
+    // Todo: Do the above with when statement
+
+
+    when(choice){
+        1 -> print("Sum = ${n1+n2}")
+        2 -> print("Dif = ${n1-n2}")
+        3 -> print("Pro = ${n1*n2}")
+        4 -> print("Quo = ${n1/n2}")
+        else -> print("Invalid Operation Code")
+    }
 }
+
+
+
+
+
+
+
+
+
+
