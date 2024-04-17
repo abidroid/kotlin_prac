@@ -104,13 +104,30 @@ fun main() {
 
     // Loops
 
-    print("Enter a number : ")
-    val num: Int = readln().toInt();
+//    print("Enter a number : ")
+//    val num: Int = readln().toInt();
+//
+//    // Note: There is no traditional for loop in Kotlin
+//    for( i in 1..10 ){
+//        println("$num X $i = ${num*i}")
+//    }
 
-    // Note: There is no traditional for loop in Kotlin
-    for( i in 1..10 ){
-        println("$num X $i = ${num*i}")
-    }
+    var num1: Int
+    var num2: Int
+    var choice: String
+
+    do{
+        print("Enter first number : ")
+        num1 = readln().toInt()
+        print("Enter second number : ")
+        num2 = readln().toInt()
+        println("Sum = ${num1+num2}")
+
+        print("Do you want more additions(yes/no) ? ")
+        choice = readln()
+
+
+    }while (choice == "yes")
 }
 
 
