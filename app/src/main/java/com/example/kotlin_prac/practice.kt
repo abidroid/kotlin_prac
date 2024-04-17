@@ -83,22 +83,34 @@ fun main() {
 //    }
 
 
-    val systemGenNum = (1..100).random();
-    print("A number has been generated from 1 to 100\nTry to guess it")
+//    val systemGenNum = (1..100).random();
+//
+//
+//    print("A number has been generated from 1 to 100\nTry to guess it")
+//
+//    while (true){
+//         print("Enter your guess : ")
+//        val userGuess = readln().toInt();
+//
+//        if( userGuess > systemGenNum){
+//            print("Your guess is high, try again")
+//        }else if( userGuess < systemGenNum){
+//            print("Your guess is low, try again")
+//        }else{
+//            break;
+//        }
+//    }
+//    println("Congratulations, you have guessed the number")
 
-    while (true){
-         print("Enter your guess : ")
-        val userGuess = readln().toInt();
+    // Loops
 
-        if( userGuess > systemGenNum){
-            print("Your guess is high, try again")
-        }else if( userGuess < systemGenNum){
-            print("Your guess is low, try again")
-        }else{
-            break;
-        }
+    print("Enter a number : ")
+    val num: Int = readln().toInt();
+
+    // Note: There is no traditional for loop in Kotlin
+    for( i in 1..10 ){
+        println("$num X $i = ${num*i}")
     }
-    println("Congratulations, you have guessed the number")
 }
 
 
