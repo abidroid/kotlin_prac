@@ -112,22 +112,27 @@ fun main() {
 //        println("$num X $i = ${num*i}")
 //    }
 
-    var num1: Int
-    var num2: Int
-    var choice: String
+//    var num1: Int
+//    var num2: Int
+//    var choice: String
+//
+//    do{
+//        print("Enter first number : ")
+//        num1 = readln().toInt()
+//        print("Enter second number : ")
+//        num2 = readln().toInt()
+//        println("Sum = ${num1+num2}")
+//
+//        print("Do you want more additions(yes/no) ? ")
+//        choice = readln()
+//
+//
+//    }while (choice == "yes")
 
-    do{
-        print("Enter first number : ")
-        num1 = readln().toInt()
-        print("Enter second number : ")
-        num2 = readln().toInt()
-        println("Sum = ${num1+num2}")
-
-        print("Do you want more additions(yes/no) ? ")
-        choice = readln()
-
-
-    }while (choice == "yes")
+    // Todo: Simple Arrays
+    // Todo: https://kotlinlang.org/docs/arrays.html#create-arrays
+    val simpleArray = arrayOf(1, 2, 3)
+    println(simpleArray.joinToString())
 }
 
 
