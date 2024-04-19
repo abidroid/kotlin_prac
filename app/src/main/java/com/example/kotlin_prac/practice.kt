@@ -131,8 +131,12 @@ fun main() {
 
     // Todo: Simple Arrays
     // Todo: https://kotlinlang.org/docs/arrays.html#create-arrays
-    val simpleArray = arrayOf(1, 2, 3)
-    println(simpleArray.joinToString())
+//    val simpleArray = arrayOf(1, 2, 3)
+//    println(simpleArray.joinToString())
+
+    // Todo: Array of nulls
+    val nullArray: Array<Int?> = arrayOfNulls(3);
+    println(nullArray.joinToString())
 }
 
 
