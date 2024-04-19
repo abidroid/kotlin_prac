@@ -135,8 +135,12 @@ fun main() {
 //    println(simpleArray.joinToString())
 
     // Todo: Array of nulls
-    val nullArray: Array<Int?> = arrayOfNulls(3);
-    println(nullArray.joinToString())
+//    val nullArray: Array<Int?> = arrayOfNulls(3);
+//    println(nullArray.joinToString())
+
+    // Todo: Note Both are valid syntax
+    var emptyArray1 = emptyArray<String>()
+    var emptyArray2: Array<String> = emptyArray()
 }
 
 
