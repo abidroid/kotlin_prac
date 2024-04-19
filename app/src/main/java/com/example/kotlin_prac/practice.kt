@@ -139,8 +139,20 @@ fun main() {
 //    println(nullArray.joinToString())
 
     // Todo: Note Both are valid syntax
-    var emptyArray1 = emptyArray<String>()
-    var emptyArray2: Array<String> = emptyArray()
+//    var emptyArray1 = emptyArray<String>()
+//    var emptyArray2: Array<String> = emptyArray()
+
+
+    // Note - All above use functions
+    // Now we will use Array constructor
+    // Creates an Array<Int> that initializes with zeros [0, 0, 0]
+    val initArray = Array<Int>(3) { 0 }
+    println(initArray.joinToString())
+
+
+    // Creates an Array<String> with values ["0", "1", "4", "9", "16"]
+    val asc = Array(5) { i -> (i * i).toString() }
+    asc.forEach { print("$it ") }
 }
 
 
