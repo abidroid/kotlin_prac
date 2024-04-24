@@ -146,6 +146,7 @@ fun main() {
     // Note - All above use functions
     // Now we will use Array constructor
     // Creates an Array<Int> that initializes with zeros [0, 0, 0]
+    /*
     val initArray = Array<Int>(3) { 0 }
     println(initArray.joinToString())
 
@@ -153,6 +154,24 @@ fun main() {
     // Creates an Array<String> with values ["0", "1", "4", "9", "16"]
     val asc = Array(5) { i -> (i * i).toString() }
     asc.forEach { print("$it ") }
+
+     */
+
+    // Todo: Collections
+    /*
+    The Kotlin Standard Library provides implementations for basic collection types: sets, lists, and maps.
+    A pair of interfaces represent each collection type:
+
+A read-only interface that provides operations for accessing collection elements.
+
+A mutable interface that extends the corresponding read-only interface with write operations:
+adding, removing, and updating its elements.
+     */
+
+    val numbers = mutableListOf("one", "two", "three", "four")
+    numbers.add("five")   // this is OK
+    println(numbers)
+//numbers = mutableListOf("six", "seven")      // compilation error
 }
 
 
