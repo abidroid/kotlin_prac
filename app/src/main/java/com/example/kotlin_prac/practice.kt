@@ -168,10 +168,23 @@ A mutable interface that extends the corresponding read-only interface with writ
 adding, removing, and updating its elements.
      */
 
+  /*
     val numbers = mutableListOf("one", "two", "three", "four")
     numbers.add("five")   // this is OK
     println(numbers)
 //numbers = mutableListOf("six", "seven")      // compilation error
+    */
+
+    val shoppingList = mutableListOf("milk", "honey", "sugar")
+    shoppingList.add("bread")
+    println(shoppingList.size)
+    shoppingList.removeAt(0)
+    println(shoppingList)
+
+    // immutable list - read only
+    val friends: List<String> = listOf("Ali", "Khan", "Bilal", "Riaz")
+
+    println(friends)
 }
 
 
