@@ -175,6 +175,7 @@ adding, removing, and updating its elements.
 //numbers = mutableListOf("six", "seven")      // compilation error
     */
 
+    /*
     val shoppingList = mutableListOf("milk", "honey", "sugar")
     shoppingList.add("bread")
     println(shoppingList.size)
@@ -185,6 +186,19 @@ adding, removing, and updating its elements.
     val friends: List<String> = listOf("Ali", "Khan", "Bilal", "Riaz")
 
     println(friends)
+
+    */
+
+
+    val numbers = mutableListOf(1, 2, 3, 4)
+    numbers.add(5)
+    numbers.removeAt(1)
+    numbers[0] = 0
+    println(numbers)
+    numbers.shuffle()
+    println(numbers)
+
+
 }
 
 
