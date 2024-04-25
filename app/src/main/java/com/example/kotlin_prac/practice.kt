@@ -190,6 +190,7 @@ adding, removing, and updating its elements.
     */
 
 
+    /*
     val numbers = mutableListOf(1, 2, 3, 4)
     numbers.add(5)
     numbers.removeAt(1)
@@ -197,7 +198,15 @@ adding, removing, and updating its elements.
     println(numbers)
     numbers.shuffle()
     println(numbers)
+    */
 
+    // Todo: Set
+    val numbers = setOf(1, 2, 3, 4)
+    println("Number of elements: ${numbers.size}")
+    if(numbers.contains(1)) println("1 is in the set")
+
+    val numbersBackward = setOf(4, 3, 2, 1)
+    println("The sets are equal: ${numbers == numbersBackward}")
 
 }
 
