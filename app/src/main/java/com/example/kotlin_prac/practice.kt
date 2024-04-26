@@ -211,6 +211,7 @@ adding, removing, and updating its elements.
     */
 
     // Todo: HashMap
+    /*
     var playersJersey: HashMap<String, Int> = HashMap()
     playersJersey["afridi"] = 10
     playersJersey.put("ronaldo", 7)
@@ -220,12 +221,27 @@ adding, removing, and updating its elements.
     for( key in playersJersey.keys){
         println("Jersey of $key is ${playersJersey[key]}")
     }
+    */
 
+    // Todo: Functions
+    displayStars()
+    displayChar('#')
 }
 
 
+fun displayStars() {
+    print("**********************************");
+    println()
+}
 
-
+fun displayChar( symbol: Char){
+    var i: Int = 1;
+    while( i < 21 ){
+        print(symbol)
+        i++
+    }
+    println()
+}
 
 
 
