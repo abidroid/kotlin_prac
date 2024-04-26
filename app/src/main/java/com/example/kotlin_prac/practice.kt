@@ -201,12 +201,25 @@ adding, removing, and updating its elements.
     */
 
     // Todo: Set
+    /*
     val numbers = setOf(1, 2, 3, 4)
     println("Number of elements: ${numbers.size}")
     if(numbers.contains(1)) println("1 is in the set")
 
     val numbersBackward = setOf(4, 3, 2, 1)
     println("The sets are equal: ${numbers == numbersBackward}")
+    */
+
+    // Todo: HashMap
+    var playersJersey: HashMap<String, Int> = HashMap()
+    playersJersey["afridi"] = 10
+    playersJersey.put("ronaldo", 7)
+    playersJersey.put("kohli", 47)
+    println(playersJersey)
+
+    for( key in playersJersey.keys){
+        println("Jersey of $key is ${playersJersey[key]}")
+    }
 
 }
 
