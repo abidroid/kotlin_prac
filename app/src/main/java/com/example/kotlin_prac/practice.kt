@@ -226,6 +226,8 @@ adding, removing, and updating its elements.
     // Todo: Functions
     displayStars()
     displayChar('#')
+    sum(4, 5)
+    println(sum(3.3, 4.4))
 }
 
 
@@ -243,8 +245,13 @@ fun displayChar( symbol: Char){
     println()
 }
 
+fun sum(n1: Int, n2: Int) {
+    println("Sum = ${n1+n2}")
+}
 
 
-
+// function overloading
+// Single Line
+fun sum( n1: Double, n2: Double) = n1+n2
 
 
