@@ -168,12 +168,12 @@ A mutable interface that extends the corresponding read-only interface with writ
 adding, removing, and updating its elements.
      */
 
-  /*
-    val numbers = mutableListOf("one", "two", "three", "four")
-    numbers.add("five")   // this is OK
-    println(numbers)
-//numbers = mutableListOf("six", "seven")      // compilation error
-    */
+    /*
+      val numbers = mutableListOf("one", "two", "three", "four")
+      numbers.add("five")   // this is OK
+      println(numbers)
+  //numbers = mutableListOf("six", "seven")      // compilation error
+      */
 
     /*
     val shoppingList = mutableListOf("milk", "honey", "sugar")
@@ -224,10 +224,20 @@ adding, removing, and updating its elements.
     */
 
     // Todo: Functions
+    /*
     displayStars()
     displayChar('#')
     sum(4, 5)
     println(sum(3.3, 4.4))
+
+     */
+
+    var student = Student()
+    student.name = "Ali"
+    student.course = "Flutter"
+    student.mobile = "03329964494"
+    student.cnic = "1730150661833"
+    student.display()
 }
 
 
@@ -236,9 +246,9 @@ fun displayStars() {
     println()
 }
 
-fun displayChar( symbol: Char){
+fun displayChar(symbol: Char) {
     var i: Int = 1;
-    while( i < 21 ){
+    while (i < 21) {
         print(symbol)
         i++
     }
@@ -246,12 +256,26 @@ fun displayChar( symbol: Char){
 }
 
 fun sum(n1: Int, n2: Int) {
-    println("Sum = ${n1+n2}")
+    println("Sum = ${n1 + n2}")
 }
 
 
 // function overloading
 // Single Line
-fun sum( n1: Double, n2: Double) = n1+n2
+fun sum(n1: Double, n2: Double) = n1 + n2
 
+
+class Student {
+    var name: String = ""
+    var course: String = ""
+    var mobile: String = ""
+    var cnic: String? = null
+
+    fun display() {
+        println("Name: $name")
+        println("Course: $course")
+        println("Mobile: $mobile")
+        println("CNIC: $cnic")
+    }
+}
 
