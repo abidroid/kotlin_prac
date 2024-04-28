@@ -232,12 +232,18 @@ adding, removing, and updating its elements.
 
      */
 
+    /*
     var student = Student()
     student.name = "Ali"
     student.course = "Flutter"
     student.mobile = "03329964494"
     student.cnic = "1730150661833"
     student.display()
+
+     */
+
+    var flutter = Book("Flutter", "Abid", 500, 400.5)
+    flutter.displayBook()
 }
 
 
@@ -279,3 +285,16 @@ class Student {
     }
 }
 
+class Book(
+    private var title: String,
+    private var author: String,
+    private var pages: Int,
+    private var price: Double,
+) {
+    fun displayBook() {
+        println("Title: $title");
+        println("Author: $author")
+        println("Pages: $pages")
+        println("Price: $price")
+    }
+}
