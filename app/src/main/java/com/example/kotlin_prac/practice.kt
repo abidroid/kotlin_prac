@@ -244,6 +244,7 @@ adding, removing, and updating its elements.
 
     var flutter = Book("Flutter", "Abid", 500, 400.5)
     flutter.displayBook()
+
 }
 
 
@@ -291,6 +292,11 @@ class Book(
     private var pages: Int,
     private var price: Double,
 ) {
+
+    // init is used to execute code upon object creation
+    init {
+        println("Book Created")
+    }
     fun displayBook() {
         println("Title: $title");
         println("Author: $author")
