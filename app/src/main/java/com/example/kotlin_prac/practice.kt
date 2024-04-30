@@ -242,9 +242,14 @@ adding, removing, and updating its elements.
 
      */
 
+    /*
     var flutter = Book("Flutter", "Abid", 500, 400.5)
     flutter.displayBook()
+    */
 
+    // Todo: Inheritance
+    var student = Student("Abid", "Male", "1st Nov", "Flutter")
+    student.display()
 }
 
 
@@ -271,7 +276,7 @@ fun sum(n1: Int, n2: Int) {
 // Single Line
 fun sum(n1: Double, n2: Double) = n1 + n2
 
-
+/*
 class Student {
     var name: String = ""
     var course: String = ""
@@ -285,6 +290,7 @@ class Student {
         println("CNIC: $cnic")
     }
 }
+*/
 
 class Book(
     private var title: String,
@@ -297,10 +303,33 @@ class Book(
     init {
         println("Book Created")
     }
+
     fun displayBook() {
         println("Title: $title");
         println("Author: $author")
         println("Pages: $pages")
         println("Price: $price")
     }
+}
+
+// Base Class
+open class Person(var name: String, var gender: String, var dob: String) {
+
+    open fun display() {
+        println("Name: $name")
+        println("Gender: $gender")
+        println("DOB: $dob")
+    }
+}
+
+// Derived Class
+class Student(name: String, gender: String, dob: String, var course: String) :
+    Person(name, gender, dob) {
+
+    override fun display() {
+        super.display()
+        println("Course: $course")
+
+    }
+
 }
