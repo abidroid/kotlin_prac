@@ -248,8 +248,18 @@ adding, removing, and updating its elements.
     */
 
     // Todo: Inheritance
+    /*
     var student = Student("Abid", "Male", "1st Nov", "Flutter")
     student.display()
+
+     */
+
+    val post1 = Post("1", "Abid", "Kotlin is best")
+    val post2 = Post("2", "Ali", "Flutter is best")
+
+    println(post1)
+    println(post2)
+    print(post1 == post2)
 }
 
 
@@ -333,3 +343,9 @@ class Student(name: String, gender: String, dob: String, var course: String) :
     }
 
 }
+
+/*
+Data classes are a feature in Kotlin that helps you to create classes solely to hold data.
+They often replace traditional POJOs (Plain Old Java Objects) in Java.
+ */
+data class Post( val postId: String, val postedBy: String, val text: String)
