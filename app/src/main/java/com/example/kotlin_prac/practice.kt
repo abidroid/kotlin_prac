@@ -267,7 +267,12 @@ adding, removing, and updating its elements.
      */
 
     // Todo: Polymorphism
-    val mano: Animal = Dog()
+    val tony: Animal = Dog()
+    tony.eat()
+    tony.sleep()
+    tony.sound()
+
+    val mano : Animal = Cat()
     mano.eat()
     mano.sleep()
     mano.sound()
