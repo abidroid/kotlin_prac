@@ -276,6 +276,11 @@ adding, removing, and updating its elements.
     mano.eat()
     mano.sleep()
     mano.sound()
+
+    val cheetah: Animal = Tiger()
+    cheetah.eat()
+    cheetah.sleep()
+    cheetah.sound()
 }
 
 
