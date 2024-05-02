@@ -254,12 +254,23 @@ adding, removing, and updating its elements.
 
      */
 
+    /*
+
+
     val post1 = Post("1", "Abid", "Kotlin is best")
     val post2 = Post("2", "Ali", "Flutter is best")
 
     println(post1)
     println(post2)
     print(post1 == post2)
+
+     */
+
+    // Todo: Polymorphism
+    val mano: Animal = Dog()
+    mano.eat()
+    mano.sleep()
+    mano.sound()
 }
 
 
@@ -349,3 +360,22 @@ Data classes are a feature in Kotlin that helps you to create classes solely to 
 They often replace traditional POJOs (Plain Old Java Objects) in Java.
  */
 data class Post( val postId: String, val postedBy: String, val text: String)
+
+abstract class Animal {
+    fun eat() = println("Eating...")
+    fun sleep() = println("Sleeping...")
+    abstract fun sound()
+}
+
+class Dog : Animal() {
+    override fun sound() = println("Barking...")
+}
+
+class Cat : Animal() {
+    override fun sound() = println("Meowing...")
+
+}
+
+class Tiger : Animal() {
+    override fun sound() = println("Roaring...")
+}
