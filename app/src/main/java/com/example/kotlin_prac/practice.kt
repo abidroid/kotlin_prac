@@ -286,17 +286,22 @@ adding, removing, and updating its elements.
      */
 
     // Todo: Exception Handling
-
-    print("Enter a number : ")
-    val num = readln().toInt()
-    print("Enter second number : ")
-    val num2 = readln().toInt()
     try {
+        print("Enter a number : ")
+        val num = readln().toInt()
+
+        print("Enter second number : ")
+        val num2 = readln().toInt()
+
         val quo = num / num2
         println("Quotient = $quo")
 
-    } catch (e: Exception) {
+    } catch (nfe: NumberFormatException) {
+        println("Invalid Input")
+    } catch (ae: ArithmeticException) {
         println("Division by zero not possible")
+    } catch (e: Exception) {
+        println("Something went wrong")
     }
 
     println("Weldone")
