@@ -267,6 +267,7 @@ adding, removing, and updating its elements.
      */
 
     // Todo: Polymorphism
+    /*
     val tony: Animal = Dog()
     tony.eat()
     tony.sleep()
@@ -281,6 +282,21 @@ adding, removing, and updating its elements.
     cheetah.eat()
     cheetah.sleep()
     cheetah.sound()
+
+     */
+
+    // Todo: Exception Handling
+    print("Enter a number : ")
+    val num = readln().toInt()
+    print("Enter second number : ")
+    val num2 = readln().toInt()
+
+    val quo = num / num2
+    println("Quotient = $quo")
+
+    println("Weldone")
+    println("Kotlin is good")
+    println("Thank You")
 }
 
 
