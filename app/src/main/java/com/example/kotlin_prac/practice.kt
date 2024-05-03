@@ -286,13 +286,18 @@ adding, removing, and updating its elements.
      */
 
     // Todo: Exception Handling
+
     print("Enter a number : ")
     val num = readln().toInt()
     print("Enter second number : ")
     val num2 = readln().toInt()
+    try {
+        val quo = num / num2
+        println("Quotient = $quo")
 
-    val quo = num / num2
-    println("Quotient = $quo")
+    } catch (e: Exception) {
+        println("Division by zero not possible")
+    }
 
     println("Weldone")
     println("Kotlin is good")
@@ -385,7 +390,7 @@ class Student(name: String, gender: String, dob: String, var course: String) :
 Data classes are a feature in Kotlin that helps you to create classes solely to hold data.
 They often replace traditional POJOs (Plain Old Java Objects) in Java.
  */
-data class Post( val postId: String, val postedBy: String, val text: String)
+data class Post(val postId: String, val postedBy: String, val text: String)
 
 abstract class Animal {
     fun eat() = println("Eating...")
