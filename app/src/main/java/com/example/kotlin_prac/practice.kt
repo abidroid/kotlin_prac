@@ -289,7 +289,9 @@ adding, removing, and updating its elements.
 
      */
 
+
     // Todo: Exception Handling
+    /*
     try {
         print("Enter a number : ")
         val num = readln().toInt()
@@ -311,6 +313,10 @@ adding, removing, and updating its elements.
     println("Weldone")
     println("Kotlin is good")
     println("Thank You")
+
+     */
+
+    table(range = 8, num = 5)
 }
 
 
@@ -332,6 +338,14 @@ fun sum(n1: Int, n2: Int) {
     println("Sum = ${n1 + n2}")
 }
 
+fun table( num: Int, range: Int){
+    var i: Int = 1
+
+    while (i <= range){
+        println("$num X $i = ${num*i}")
+        i++
+    }
+}
 
 // function overloading
 // Single Line
