@@ -1,5 +1,9 @@
 package com.example.kotlin_prac
 
+/* bought M3 on 4th May 2024
+    in Lahore with
+   RQ and Rashid Sb
+*/
 fun main() {
     // for outputs
 //    println("Hello World")
