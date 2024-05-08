@@ -316,7 +316,13 @@ adding, removing, and updating its elements.
 
      */
 
-    table(range = 8, num = 5)
+    //table(range = 8, num = 5)
+
+    println("Cube of 5 is ${cube(5)}");
+}
+
+fun cube(num: Int): Int {
+    return num * num * num;
 }
 
 
@@ -338,11 +344,11 @@ fun sum(n1: Int, n2: Int) {
     println("Sum = ${n1 + n2}")
 }
 
-fun table( num: Int, range: Int){
+fun table(num: Int, range: Int) {
     var i: Int = 1
 
-    while (i <= range){
-        println("$num X $i = ${num*i}")
+    while (i <= range) {
+        println("$num X $i = ${num * i}")
         i++
     }
 }
