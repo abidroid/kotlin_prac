@@ -318,7 +318,13 @@ adding, removing, and updating its elements.
 
     //table(range = 8, num = 5)
 
-    println("Cube of 5 is ${cube(5)}");
+    //println("Cube of 5 is ${cube(5)}");
+
+    // Todo: Ranges
+
+    for( i in 1..10) print(i)
+    println()
+    for( i in 10 downTo 1) print(i)
 }
 
 fun cube(num: Int): Int {
